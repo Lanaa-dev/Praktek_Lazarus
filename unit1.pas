@@ -5,10 +5,17 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
 
 type
+
+  { TForm1 }
+
   TForm1 = class(TForm)
+    Halo: TButton;
+    Maulana: TEdit;
+    Label1: TLabel;
+    procedure HaloClick(Sender: TObject);
   private
 
   public
@@ -21,6 +28,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.HaloClick(Sender: TObject);
+begin
+  ShowMessage('Hello '+Maulana.text);
+end;
 
 end.
 

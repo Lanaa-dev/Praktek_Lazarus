@@ -1,0 +1,36 @@
+object Form1: TForm1
+  Left = 371
+  Height = 300
+  Top = 180
+  Width = 513
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 513
+  DesignTimePPI = 120
+  LCLVersion = '2.0.0.4'
+  object Halo: TButton
+    Left = 168
+    Height = 32
+    Top = 80
+    Width = 72
+    Caption = 'Halo'
+    OnClick = HaloClick
+    TabOrder = 0
+  end
+  object Maulana: TEdit
+    Left = 26
+    Height = 28
+    Top = 72
+    Width = 68
+    TabOrder = 1
+    Text = 'Maulana'
+  end
+  object Label1: TLabel
+    Left = 26
+    Height = 20
+    Top = 32
+    Width = 40
+    Caption = 'Nama'
+    ParentColor = False
+  end
+end
